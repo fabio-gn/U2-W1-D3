@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+article{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#612406;
+    background-color:  #FBF7E3;
+    max-width: 480px;
+    display:flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+
+}
+article h1{
+    margin-bottom: 1rem;
+}
+article img{
+margin-top: 1.5rem;
+width: 100%;
+}
+@media screen and (min-width: 720px) {
+    article{
+        flex-direction: row;
+        max-width: 1000px;  
+    }
+    article .immagine{
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+    article .h1p-wrapper{
+        flex-grow: 1 ;
+        flex-shrink: 1;
+    }
+    
+}
